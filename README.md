@@ -1,7 +1,5 @@
-# Projets OpenClassrooms - Formation Développeur d'applications JavaScript React
+# OpenClassrooms Formation Développeur d'applications JavaScript React - Projet 4 : Créez une landing page avec Javascript
  
-Hey salut, ici sont les différents projets que j'ai pu faire durant ma formation chez OpenClassrooms.
+Projet n°4 de la formation Développeur d'applications JavaScript React chez OpenClassrooms.
 
-Chaque projet a sa branche.
-
-Bonne visite ! 
+Le but du projet était d'ajouter le code JavaScript manquant pour le bon fonctionnement du site : https://github.com/OpenClassrooms-Student-Center/GameOn-website-FR/
