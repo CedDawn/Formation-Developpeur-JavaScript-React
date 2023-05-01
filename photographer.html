@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
+    <link href="css/photographer.css" rel="stylesheet" type="text/css">
+    <title>Fisheye - Photographe</title>
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html"><img src="assets/images/logo.png" class="logo" alt="Fisheye Home Page"></a>
+    </header>
+    <main class="photographer_section">
+      <div class="tri">
+        <p class="triTitle" id="choice">Trier par</p>
+        <div class="select" role="listbox">
+          <div class="selectone">
+            <button id="actualOrder" class="btntri" name="Order by">Popularité</button>
+            <button class="btnarrow nodecobtn" aria-label="See Sorting options">
+              <img src="assets/icons/selectarrow.svg" class="arrow" alt="open sort menu" aria-expanded="false">  
+            </button>
+          </div>
+          <div id="separator1" class="invisible separator"></div>
+          <button id="orderLikes" class="invisible btntri" aria-labelledby="choice">Popularité</button>
+          <div id="separator2" class="invisible separator"></div>
+          <button id="orderDate" class="invisible btntri" aria-labelledby="choice">Date</button>
+          <div id="separator3" class="invisible separator"></div>
+          <button id="orderTitle" class="invisible btntri" aria-labelledby="choice">Titre</button>
+        </div>
+      </div>
+      <div class="medias_section"></div>
+      <div class="likes_section"></div>
+    </main>
+    
+
+    <template id="photographer">
+      <section class="main">
+        <div>
+          <h1 class="name"></h1>
+          <div class="infos">
+            <h2 class="localization"><span class="city"></span>, <span class="country"></span></h2>
+            <span class="tagline"></span>
+          </div>
+        </div>
+        <button name="Contact Me" class="contact_button" onclick="displayModal()">Contactez-moi</button>
+        <img class="portrait" alt="photographer">
+      </section>
+
+      <div class="carrousel invisible" role="button" aria-label="image closeup view">
+        <button id="carrouselLeft" class="nodecobtn">
+          <img src="assets/icons/leftarrow.svg" alt="Previous image">
+        </button>
+        
+        <div class="carcontent invisible"></div>
+        <div>
+          <button id="carrouselRight" class="nodecobtn">
+            <img src="assets/icons/rightarrow.svg" alt="Next image">
+          </button>
+          <button onclick="closeCarrousel()" class="closecarrousel nodecobtn">
+            <img src="assets/icons/closetwo.svg" alt="Close dialog">
+          </button>
+        </div>
+      </div>
+
+      <div id="contact_modal">
+        <div class="modal">
+          <header>
+            <div>
+              <h2>Contactez-moi</h2>
+              <button class="nodecobtn" onclick="closeModal()">
+                <img src="assets/icons/close.svg" alt="Close Modal">
+              </button>
+            </div>
+            <p class="photographername"></p>
+          </header>
+          <form>
+            <div>
+              <label for="firstname">Prénom</label>
+              <input type="text" id="firstname" name="First name">
+            </div>
+            <div>
+              <label for="lastname">Nom</label>
+              <input type="text" id="lastname" name="Last name">
+            </div>
+            <div>
+              <label for="mail">Email</label>
+              <input type="email" id="mail" name="Email">
+            </div>
+            <div class="formdiv">
+              <label for="message">Votre message</label>
+              <textarea id="message" name="Your message"></textarea>
+            </div>
+            <button class="contact_button sendbtn" name="send" type="reset" onclick="submitModal()">Envoyer</button>
+          </form>
+        </div>
+      </div>
+    </template>
+
+    <template id="media">
+      <article class="article" data-id>
+        <button class="nodecobtn photo">
+          <img class="minphoto" alt="media">
+        </button>
+        <div class="underImage">
+          <h3 class="title"></h3>
+          <div class="flex">
+            <h3 class="likes"></h3>
+            <button class="nodecobtn imglikes">
+              <img src="assets/icons/heart.svg" alt="likes">
+            </button>
+          </div>
+        </div>
+      </article>
+    </template>
+
+    <template id="likesprice">
+      <p class="totalLikes"></p>
+      <p class="price"></p>
+    </template>
+
+
+    <script src="/scripts/utils/carrousel.js"></script>
+    <script type="module" src="scripts/pages/photographer.js"></script>
+    <script src="/scripts/utils/contactForm.js"></script>
+  </body>
+</html>

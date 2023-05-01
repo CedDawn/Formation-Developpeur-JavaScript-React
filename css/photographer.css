@@ -1,0 +1,429 @@
+.invisible {
+    display: none !important;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    margin: 0;
+    padding: 44px 100px 0px 100px;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+input {
+    font-size: 24px;
+}
+
+textarea {
+    font-size: 20px;
+}
+
+.logo {
+    width: 200px;
+    height: 50px;
+}
+
+.main {
+    background: #FAFAFA;
+    border-radius: 5px;
+    z-index: -1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    padding: 50px 50px 50px 34px;
+}
+
+.name {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 50px;
+    color: #D3573C;
+    margin: 0 0 0 16px;
+}
+
+.infos {
+    width: 374px;
+    height: 113px;
+    border: 2px solid #95FFF9;
+    box-sizing: border-box;
+    padding: 16px 0 0 16px;
+}
+
+.localization {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 31px;
+    color: #901C1C;
+    margin: 0 0 19px 0;
+}
+
+.tagline {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    color: #525252;
+}
+
+.contact_button {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    background-color: #901C1C;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 22px 11px;
+}
+
+.sendbtn {
+    width: 170px;
+    height: 69px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.contact_button:hover, .contact_button:focus {
+    background-color: #DB8876;
+    color: black;
+}
+
+#contact_modal {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);;
+}
+
+.modal {
+    border-radius: 5px;
+    background-color: #DB8876;
+    width: 600px;
+    height: 830px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px;
+    margin: auto;
+}
+
+.modal header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: -20px;
+}
+
+.modal header div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal header div img {
+    cursor: pointer;
+}
+
+.modal header div h2 {
+    font-size: 64px;
+    font-weight: normal;
+    text-align: center;
+    margin: 0;
+}
+
+.photographername {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 83px;
+    margin: 0;
+}
+
+form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+form label {
+    color: #312E2E;
+    font-size: 36px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: self-start;
+}
+
+.formdiv {
+    margin-bottom: 26px;
+}
+
+form input {
+    width: 100%;
+    height: 68px;
+    border: none;
+    border-radius: 5px;
+}
+
+#message {
+    height: 170px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.portrait {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #C4C4C4;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);  
+    margin-left: 85px;
+}
+
+.triTitle {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    width: 100px;
+    color: #000000;
+}
+
+.tri {
+    margin-top: 10px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.select {
+    background-color: #911C1C;
+    height: 60px;
+    width: 135px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 0 20px 0 15px;
+}
+
+.selectone {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.selecttwo {
+    height: 170px !important;
+    z-index: 10;
+    margin-top: 110px;
+}
+
+.btntri {
+    border: 0;
+    background-color: #911C1C;
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.separator {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
+
+.nodecobtn {
+    background: none;
+    border: 0;
+}
+
+.arrow {
+    cursor: pointer;
+    transform: rotate(-180deg);
+}
+
+.arrowfocus {
+    transform: rotate(0deg);
+}
+
+.medias_section {
+    margin-top: 30px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    row-gap: 30px;
+    column-gap: 85px;
+}
+
+.article {
+    width: 350px;
+    /* margin-left: 100px;
+    margin-right: 100px; */
+}
+
+.minphoto {
+    width: 350px;
+    height: 300px;
+    border-radius: 5px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.underImage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 31px;
+    color: #911C1C;
+    margin: 0;
+}
+
+.likes {
+    margin: 0 5px 0 0;
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 31px;
+    color: #911C1C;
+}
+
+.imglikes {
+    cursor: pointer;
+}
+
+.btnlike {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.likes_section {
+    width: 330px;
+    height: 65px;
+    background: #DB8876;
+    border-radius: 5px;
+    position: fixed;
+    bottom: -5px;
+    right: 210px;
+    z-index: 10;
+    display: flex;
+    padding: 0 20px 0 20px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.totalLikes {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 31px;
+    color: #000000;
+    margin-right: 5px;
+}
+
+.totalLikes::after {
+    content : " ♥"
+}
+
+.price {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: center;
+    color: #000000;
+}
+
+.carrousel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+
+.carrouselcontent {
+    max-width: 1050px;
+    max-height: 900px;
+    top: 62px;
+    object-fit: cover;
+    z-index: 1000;
+}
+
+.closecarrousel {
+    position: absolute;
+    top: 37px;
+    right: 300px;
+    cursor: pointer;
+}
+
+#carrouselRight {
+    position: absolute;
+    right: 300px;
+    cursor: pointer;
+}
+
+#carrouselLeft {
+    position: absolute;
+    left: 300px;
+    cursor: pointer;
+}
+
+.endcarrousel {
+    opacity: 0.4;
+    cursor: not-allowed !important;
+}
