@@ -1,0 +1,25 @@
+.errorpage {
+    margin-left: 117px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.errorpage h1 {
+    font-weight: 500;
+    font-size: 130px;
+    color: #FF0101;
+    margin: 0;
+}
+
+.errorpage h2 {
+    font-size: 30px;
+    margin-top: 0;
+}
+
+.errorpage a {
+    font-size: 18px;
+    margin-top: 10px;
+}
