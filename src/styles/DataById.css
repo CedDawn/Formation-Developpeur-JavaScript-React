@@ -1,0 +1,161 @@
+.data-content {
+    width: 100%;
+}
+
+.first-part {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-part {
+    width: 70%;
+}
+
+.title-part h1 {
+    font-weight: 600;
+    font-size: 36px;
+    color: #FF6060;
+    margin-bottom: 10px;
+}
+
+.title-part p {
+    font-weight: 500;
+    font-size: 18px;
+    color: #FF6060;
+    margin-top: 0;
+}
+
+.author-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.author-part .author {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.author-part p {
+    width : min-content;
+    text-align: right;
+    color: #FF6060;
+    font-weight: 500;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.author img {
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+}
+
+.tags-part {
+    display: flex;
+    align-items: center;
+}
+
+.rate-part img {
+    width: 30px;
+    height: 30px;
+}
+
+.second-part {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -10px;
+}
+
+.description-part {
+    width: 49%;
+}
+
+.equipements-part {
+    width: 49%;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .title-part {
+        width: 80%;
+    }
+
+    .title-part h1 {
+        font-size: 26px;
+    }
+
+    .title-part p {
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+
+    .author-part p {
+        font-size: 18px;
+    }
+    
+    .author-part img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .rate-part img {
+        width: 23px;
+        height: 23px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .first-part {
+        flex-direction: column;
+    }
+
+    .title-part {
+        width: 100%;
+    }
+
+    .title-part h1 {
+        font-size: 20px;
+    }
+
+    .author-part {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .second-part {
+        flex-direction: column;
+    }
+
+    .description-part, .equipements-part {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .title-part h1 {
+        font-size: 18px;
+    }
+
+    .title-part p {
+        font-size: 14px;
+    }
+
+    .author-part p {
+        font-size: 12px;
+    }
+
+    .author-part img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .rate-part img {
+        width: 15px;
+        height: 15px;
+    }
+}

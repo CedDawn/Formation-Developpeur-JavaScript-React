@@ -1,0 +1,60 @@
+.kasa-banner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.about-banner img {
+    height: 223px;
+}
+
+.kasa-banner img {
+    width: 100%;
+    filter: brightness(75%);
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+.kasa-banner h1 {
+    text-align: center;
+    position: absolute;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 142.6%;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 900px) {
+    .kasa-banner img {
+        min-height: 110px;
+    }
+    .kasa-banner h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 600px) {  
+    .kasa-banner {
+        justify-content: flex-start;
+    }
+
+    .kasa-banner img {
+        height: 110px;
+        border-radius: 10px;
+    }
+
+    .about-banner img {
+        height: 223px;
+    }
+
+    .kasa-banner h1 {
+        font-size: 23px;
+        width: 210px;
+        text-align: left;
+        line-height: 100%;
+        margin-left: 20px;
+    }
+}

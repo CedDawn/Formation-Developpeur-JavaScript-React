@@ -1,0 +1,63 @@
+.kasa-header {
+    height: 140px;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.kasa-header nav {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.kasa-header nav a {
+    text-decoration: none;
+    color: #FF6060;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 142.6%;
+}
+
+@media screen and (max-width: 700px) {
+
+    .kasa-header {
+        height: 100px;
+        width: 90%;
+        gap: 10%;
+    }
+
+    .kasa-header > a {
+        width: 50%;
+    }
+
+    
+
+    .kasa-header nav {
+        width: 200px;
+        text-transform: uppercase;
+    }
+    
+    .kasa-header nav a {
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .kasa-header nav {
+        width: 200px;
+        text-transform: uppercase;
+    }
+
+    .kasa-header img {
+        width: 100%;
+    }
+
+    .kasa-header nav a {
+        font-size: 14px;
+    }
+
+}
