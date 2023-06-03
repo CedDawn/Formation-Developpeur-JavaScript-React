@@ -1,7 +1,7 @@
-# Projets OpenClassrooms - Formation Développeur d'applications JavaScript React
+# OpenClassrooms Formation Développeur d'applications JavaScript React - Projet 13 : Utilisez une API pour un compte utilisateur bancaire avec React
  
-Hey salut, ici sont les différents projets que j'ai pu faire durant ma formation chez OpenClassrooms.
+Projet n°13 de la formation Développeur d'applications JavaScript React chez OpenClassrooms.
 
-Chaque projet a sa branche.
-
-Bonne visite ! 
+Le but du projet était de créer une application web en React affichant des informations provenant d'un back en utilisant Redux en gestionnaire d'états.
+Une maquette en HTML était fournie ici : https://github.com/OpenClassrooms-Student-Center/Project-10-Bank-API/tree/master/designs
+Le back est juste ici : https://github.com/OpenClassrooms-Student-Center/Project-10-Bank-API
